@@ -1,7 +1,7 @@
 /*
-Theme Name: Horoscopo Tema
+Theme Name: Horóscopo Tema
 Theme URI: https://www.ejemplo.com 
-Author: Horosoopo 
+Author: Horóscopo 
 Author URI: https://www.tusitio.com 
 Description: Breve descripción del tema. 
 Version: 0.1 
@@ -9,6 +9,11 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 Text Domain: nombre-del-tema
 */
+:root {
+    --color-light: #FFF;
+    --bg-others:
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,15 +25,107 @@ html {
     padding: 0;
 }
 
-.header {
-    height: 10vh;
-}
-
 body {
     background-color: #000722;
     height: 80vh;
 }
 
+.header__h1 {
+    padding: 32px;
+    color: var(--color-light);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.header__loader {
+    z-index: 1;
+    animation: loader 2s ease-out;
+}
+
+.header,
 .footer {
-    height: 10vh;
+    min-height: 10vh;
+    background-color: #15002c;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--color-light);
+}
+
+.grid__horoscopo {
+    width: 100%;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 64px;
+}
+
+.grid__card {
+    background-color: var(--color-light);
+    color: #15002c;
+    border-radius: 32px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.grid__span {
+    font-size: 2rem;
+
+}
+
+.footer__newsletter {
+    color: var(--color-light);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer__svg {
+    width: 80px;
+    height: 80px;
+}
+
+.footer__p,
+.footer__apuntar {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer__p {
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.footer__apuntar {
+    padding: 16px;
+    background-color: var(--color-light);
+    color: var();
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer__ul {
+    display: flex;
+    gap: 32px;
+}
+
+@keyframes loader {
+    0% {
+        min-height: 100vh;
+    }
+
+    100% {
+        min-height: 0vh;
+    }
 }
