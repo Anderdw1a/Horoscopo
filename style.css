@@ -1,0 +1,34 @@
+/*
+Theme Name: Horoscopo Tema
+Theme URI: https://www.ejemplo.com 
+Author: Horosoopo 
+Author URI: https://www.tusitio.com 
+Description: Breve descripción del tema. 
+Version: 0.1 
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: nombre-del-tema
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 10vh;
+}
+
+body {
+    background-color: #000722;
+    height: 80vh;
+}
+
+.footer {
+    height: 10vh;
+}
