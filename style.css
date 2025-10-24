@@ -15,7 +15,7 @@ Text Domain: nombre-del-tema
 :root {
     --background-color-main: #000722;
     font-size: 16px;
-  --color-light: #FFF;
+    --color-light: #FFF;
 }
 
 * {
@@ -137,6 +137,8 @@ body {
     100% {
         min-height: 0vh;
     }
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -171,6 +173,7 @@ body {
     width: 500px;
     height: 600px;
 }
+
 
 @keyframes rotar {
 
