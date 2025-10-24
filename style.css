@@ -14,3 +14,21 @@ Text Domain: nombre-del-tema
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 10vh;
+}
+
+body {
+    background-color: #000722;
+    height: 80vh;
+}
+
+.footer {
+    height: 10vh;
+}
