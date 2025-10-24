@@ -1,7 +1,7 @@
 /*
-Theme Name: Horóscopo Tema
+Theme Name: Horoscopo Tema
 Theme URI: https://www.ejemplo.com 
-Author: Horóscopo 
+Author: Horosoopo 
 Author URI: https://www.tusitio.com 
 Description: Breve descripción del tema. 
 Version: 0.1 
@@ -9,8 +9,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 Text Domain: nombre-del-tema
 */
-
-
 
 :root {
     --background-color-main: #000722;
@@ -147,45 +145,54 @@ body {
 }
 
 
-.img__front {
-    animation-name: rotar;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform-origin: center;
-    border-radius: 50%;
-}
-
-.main--index {
-    background-color: white;
-    display: grid;
-    place-items: center;
-    min-height: 80vh;
-}
-
-.signo__img {
-    width: 500px;
-    height: 600px;
-}
-
-@keyframes rotar {
-
-    0% {
-        rotate: 0deg;
+    .header {
+        height: 10vh;
     }
 
-    100% {
-        rotate: 360deg;
+    .footer {
+        height: 10vh;
     }
-}
 
-.signo__texto {
-    text-align: center;
-    width: 40%;
-    font-size: 20px;
-    padding-left: 64px;
-}
+    .img__front {
+        animation-name: rotar;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+        border-radius: 50%;
+    }
 
-.signo__titulo {
-    font-family: "Poppins";
-}
+    .main--index {
+        background-color: white;
+        display: grid;
+        place-items: center;
+        min-height: 80vh;
+    }
+
+    .signo__img {
+        width: 500px;
+        height: 600px;
+    }
+
+
+    @keyframes rotar {
+
+        0% {
+            rotate: 0deg;
+        }
+
+        100% {
+            rotate: 360deg;
+        }
+    }
+
+    .signo__texto {
+        text-align: center;
+        width: 40%;
+        font-size: 20px;
+        padding-left: 64px;
+    }
+
+    .signo__titulo {
+        font-family: "Poppins";
+    }
