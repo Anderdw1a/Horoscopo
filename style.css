@@ -135,12 +135,15 @@ body {
     100% {
         min-height: 0vh;
     }
+}
 
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
     .header {
         height: 10vh;
