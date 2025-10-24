@@ -5,20 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>---------------------------------</title>
-
+    <?php get_head();?>
 </head>
 
 <body>
     <header class="header">
 
     </header>
-    <main class="main">
-
-    </main>
-    <footer class="footer">
-
-    </footer>
-    <script src="script.js"></script>
-</body>
-
-</html>
